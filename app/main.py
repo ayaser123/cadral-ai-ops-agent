@@ -24,8 +24,29 @@ def startup():
     seed.seed()
     rag.get_index()
     worker.start()
+    if config.env("DEMO_SEED", "0") == "1" and not db.q("SELECT 1 FROM conversations LIMIT 1"):
+        threading.Thread(target=_demo_seed, daemon=True).start()
     # recover anything that was mid-flight when the process died
     db.x("UPDATE inbox SET status='retry' WHERE status='processing'")
+
+
+DEMO_MSGS = [
+    ("alice@example.com", "Where is my order ORD-1001?"), ("bob@example.com", "How long do I have to return something?"),
+    ("dave@example.com", "I'd like a refund for ORD-1007, the armchair is the wrong colour"),
+    ("carol@example.com", "THIS IS UNACCEPTABLE. I'm calling my solicitor!!!"), ("emma@example.com", "Cancel ORD-1009 please"),
+    ("grace@example.com", "Do you accept Klarna?"), ("henry@example.com", "What is the capital of France?"),
+    ("frank@example.com", "Has ORD-1011 arrived yet? It was due days ago"),
+]
+
+
+def _demo_seed():
+    """Render's free disk is ephemeral: repopulate the dashboard with realistic traffic after each cold start (DEMO_SEED=1)."""
+    for i, (e, t) in enumerate(DEMO_MSGS):
+        try:
+            _, iid = pipeline.ingest("web", e, t, chat_ref=f"demo{i}")
+            pipeline.process_inbox(iid)
+        except Exception:
+            pass
 
 
 # ---------------------------------------------------------------- auth (HMAC-signed bearer tokens, PBKDF2 passwords)
