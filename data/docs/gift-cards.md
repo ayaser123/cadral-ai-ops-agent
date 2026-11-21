@@ -1,0 +1,2 @@
+# Gift Cards
+Gift cards are valid for **24 months** from purchase, are delivered by email, and can be used on any product. Gift cards cannot be exchanged for cash and are non-refundable. Lost cards can be reissued with proof of purchase.

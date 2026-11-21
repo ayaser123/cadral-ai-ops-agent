@@ -1,0 +1,2 @@
+# Contact Us
+Customer care is open Monday to Friday 9am-5:30pm and Saturday 10am-2pm (UK time). Phone: 0800 123 4567. Email: help@northwick.example. Live chat is available during opening hours; our AI assistant answers 24/7 and hands complex cases to a human colleague. We are an online-only retailer and have no physical shops.

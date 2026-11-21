@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Northwick Support Chat</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#14181f;--mute:#667085;--line:#e4e7ec;--brand:#0f6b5c;--brand2:#e7f4f1}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1116;--card:#171b22;--ink:#e8ebf0;--mute:#98a2b3;--line:#2a303a;--brand:#3fbfa8;--brand2:#13302b}}
+body{margin:0;font:15px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:520px;margin:0 auto;height:100vh;display:flex;flex-direction:column;background:var(--card);border-inline:1px solid var(--line)}
+header{padding:14px 16px;background:var(--brand);color:#fff}header b{font-size:16px}header div{font-size:12px;opacity:.85}
+#msgs{flex:1;overflow:auto;padding:14px}.m{max-width:85%;padding:9px 13px;border-radius:14px;margin:6px 0;white-space:pre-wrap}
+.c{background:var(--brand);color:#fff;margin-left:auto}.a{background:var(--brand2)}.s{color:var(--mute);font-size:12px;text-align:center}
+form{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line)}input{flex:1;padding:11px;border:1px solid var(--line);border-radius:10px;font:inherit;background:var(--card);color:var(--ink)}
+button{background:var(--brand);color:#fff;border:0;border-radius:10px;padding:0 18px;font:inherit;cursor:pointer}
+#setup{padding:12px;border-bottom:1px solid var(--line);font-size:13px}#setup input{width:100%;margin-top:4px}
+</style>
+</head>
+<body><div class="wrap">
+<header><b>Northwick &amp; Co</b><div>Customer care · AI assistant, humans on hand</div></header>
+<div id="setup">Your email (so we can look up your orders): <input id="email" value="alice@example.com"></div>
+<div id="msgs"><div class="m a">Hi! I can check orders, handle refunds and answer questions about delivery, returns and products. How can I help?</div></div>
+<form id="f"><input id="t" placeholder="Type your message…" autocomplete="off"><button>Send</button></form></div>
+<script>
+const sid=localStorage.sid||(localStorage.sid=crypto.randomUUID());let conv=null,seen=0;const $=s=>document.querySelector(s);
+function add(t,c){const d=document.createElement('div');d.className='m '+c;d.textContent=t;$('#msgs').appendChild(d);$('#msgs').scrollTop=1e9;return d}
+$('#f').onsubmit=async e=>{e.preventDefault();const t=$('#t').value.trim();if(!t)return;$('#t').value='';add(t,'c');seen++;
+ const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:$('#email').value,text:t,session:sid})});
+ conv=(await r.json()).conversation_id;poll()};
+let timer;function poll(){clearInterval(timer);let n=0;timer=setInterval(async()=>{n++;const r=await fetch(`/api/chat/${conv}/messages?session=${sid}`);if(!r.ok)return;const d=await r.json();
+ const ms=d.messages;while(seen<ms.length){const m=ms[seen++];if(m.role=='assistant')add(m.content,'a')}
+ $('#hold')?.remove();if(d.awaiting_human&&!$('#hold')){const h=add('A member of our team is reviewing this reply and will answer shortly…','s');h.id='hold'}
+ if(n>120)clearInterval(timer)},1200)}
+</script></body></html>

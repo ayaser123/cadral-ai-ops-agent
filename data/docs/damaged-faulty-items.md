@@ -1,0 +1,2 @@
+# Damaged or Faulty Items
+Report damaged or faulty goods within **14 days** of delivery with photos of the item and packaging. We will offer a free replacement or a full refund including delivery costs, at your choice. We arrange free collection of faulty items.

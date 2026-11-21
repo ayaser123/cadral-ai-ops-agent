@@ -1,0 +1,18 @@
+[
+ {
+  "model": "rules-baseline (heuristic router)",
+  "split": "test",
+  "n": 180,
+  "accuracy": 0.9278,
+  "macro_f1": 0.9273,
+  "invalid_outputs": 0,
+  "latency_ms_mean": 0.0,
+  "latency_ms_p95": 0.1,
+  "cost_usd_per_1k_requests": 0.0,
+  "confusions": {
+   "escalation->support": 3,
+   "orders->support": 4,
+   "escalation->orders": 6
+  }
+ }
+]

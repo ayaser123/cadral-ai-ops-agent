@@ -1,0 +1,2 @@
+# Privacy and Data Protection (UK GDPR)
+We keep order records for 6 years for tax purposes. You may request a copy of your data or ask for deletion at privacy@northwick.example; we respond within **30 days**. We never sell personal data. Marketing emails can be switched off any time using the unsubscribe link.

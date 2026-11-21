@@ -1,0 +1,1074 @@
+{
+ "engine": "offline-heuristic",
+ "score": 0.9846153846153847,
+ "routing_accuracy": 1.0,
+ "passed": 64,
+ "total": 65,
+ "latency_p50_ms": 516.6,
+ "results": [
+  {
+   "id": "S01",
+   "text": "What is your returns policy?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 589.2,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Northwick & Co accepts returns within 30 days of delivery . [1] Customers outside the UK pay return postage. [2] Is there anything else I can help with?"
+  },
+  {
+   "id": "S02",
+   "text": "How many days do I have to send something back?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 608.1,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Northwick & Co accepts returns within 30 days of delivery . [1] Check the delivered date; returns are accepted up to 30 days after delivery. [2] Is there anything else I can help with?"
+  },
+  {
+   "id": "S03",
+   "text": "How much does express delivery cost?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 647.5,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Express UK GBP 6.95 Next working day if ordered before 2pm. [1] We will offer a free replacement or a full refund including delivery costs, at your choice. [2] Is there anything else I can help with?"
+  },
+  {
+   "id": "S04",
+   "text": "Do you ship to the EU and how much is it?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 570.5,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. We ship to the EU (7-10 working days, GBP 9.95) and the rest of the world (10-14 working days, GBP 14.95). [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S05",
+   "text": "How long does standard delivery take?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 672.1,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Standard UK GBP 3.95 (free over GBP 50) 3-5 working days. [1] Standard delivery charges are refunded only if the item arrived faulty or damaged or we sent the wrong item. [2] Is there anything else I can help with?"
+  },
+  {
+   "id": "S06",
+   "text": "Is delivery free over a certain amount?",
+   "pass": false,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": false,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 490.9,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. We will offer a free replacement or a full refund including delivery costs, at your choice. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S07",
+   "text": "Which payment methods do you accept?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 749.4,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Refunds are issued to the original payment method within 5-7 working days after we receive and inspect the returned item. [2] We accept Visa, Mastercard, American Express, PayPal, Apple Pay, Google Pay and Klarna (pay in 3 interest-free instalments). [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S08",
+   "text": "Can I pay with PayPal?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 519.2,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. We accept Visa, Mastercard, American Express, PayPal, Apple Pay, Google Pay and Klarna (pay in 3 interest-free instalments). [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S09",
+   "text": "How long is the guarantee on electronics?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 439.0,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. All electronics carry a 24 month guarantee . [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S10",
+   "text": "How do I earn reward points?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 487.6,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Earn 1 point for every GBP 1 spent. [1] 100 points = GBP 5 reward voucher. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S11",
+   "text": "Do my reward points expire?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 488.1,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. 100 points = GBP 5 reward voucher. [1] Points expire 12 months after they are earned. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S12",
+   "text": "How long are gift cards valid for?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 754.7,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Gift cards are valid for 24 months from purchase, are delivered by email, and can be used on any product. [1] Product Gift Card 50 (SKU NW-1025), category Gift Cards, price GBP 50.0, in stock, Emailed gift card, valid 24 months. [2] Is there anything else I can help with?"
+  },
+  {
+   "id": "S13",
+   "text": "Do you have a student discount?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 416.7,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Student discount : 15% off with UNiDAYS verification. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S14",
+   "text": "What does the WELCOME10 code give me?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 557.1,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. WELCOME10 : 10% off your first order over GBP 30. [1] Only one promo code can be used per order. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S15",
+   "text": "How do I wash the cotton throw?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 429.8,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Cotton throws and cushions Machine wash at 30 degrees, tumble dry low. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S16",
+   "text": "Do you sell the velvet armchair and how much is it?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 543.7,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Product Velvet Armchair (SKU NW-1013), category Furniture, price GBP 249.0, out of stock, Mid-century velvet armchair, walnut legs. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S17",
+   "text": "How much is the air fryer?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 543.2,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Product Air Fryer 5L (SKU NW-1018), category Electronics, price GBP 89.0, in stock, Digital air fryer with 8 presets. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S18",
+   "text": "What are your customer service opening hours?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 687.4,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Customer care is open Monday to Friday 9am-5:30pm and Saturday 10am-2pm (UK time). [1] Live chat is available during opening hours; our AI assistant answers 24/7 and hands complex cases to a human colleague. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S19",
+   "text": "How do I request deletion of my personal data?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 641.5,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. You may request a copy of your data or ask for deletion at privacy@northwick.example; we respond within 30 days . [1] We never sell personal data. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S20",
+   "text": "What is your policy on damaged items?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 712.3,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Report damaged or faulty goods within 14 days of delivery with photos of the item and packaging. [1] Standard delivery charges are refunded only if the item arrived faulty or damaged or we sent the wrong item. [2] Is there anything else I can help with?"
+  },
+  {
+   "id": "S21",
+   "text": "Can sale items be returned?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 521.9,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Standard sale items follow the 30-day returns policy. [1] Items marked Final Sale cannot be returned unless faulty. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S22",
+   "text": "Is your packaging recyclable?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 448.1,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Packaging All parcels use 100% recyclable cardboard and paper tape. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S23",
+   "text": "Do you offer price matching?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 532.9,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Price adjustments We do not offer price matching or retrospective price adjustments after a sale starts. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S24",
+   "text": "What is the Northwick Care extended warranty?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 451.4,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Northwick Care is an optional 36 month extended warranty for electronics costing GBP. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "S25",
+   "text": "Where is your head office based?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "citation": true,
+    "content": true,
+    "grounded": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 427.6,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Thanks for getting in touch. Our warehouse and head office are in Leeds, West Yorkshire. [1] Is there anything else I can help with?"
+  },
+  {
+   "id": "I01",
+   "text": "What is the capital of France?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "idk": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 521.8,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I don't have reliable information on that in our documentation, so I don't want to guess. I've passed your question to a member of the team who will get back to you."
+  },
+  {
+   "id": "I02",
+   "text": "Who is the CEO of the company?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "idk": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 516.6,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I don't have reliable information on that in our documentation, so I don't want to guess. I've passed your question to a member of the team who will get back to you."
+  },
+  {
+   "id": "I03",
+   "text": "How tall is Mount Everest?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "idk": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 533.8,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I don't have reliable information on that in our documentation, so I don't want to guess. I've passed your question to a member of the team who will get back to you."
+  },
+  {
+   "id": "I04",
+   "text": "What will the weather be like tomorrow?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "idk": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 521.3,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I don't have reliable information on that in our documentation, so I don't want to guess. I've passed your question to a member of the team who will get back to you."
+  },
+  {
+   "id": "I05",
+   "text": "What is the wifi password at your warehouse?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "idk": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 534.9,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I don't have reliable information on that in our documentation, so I don't want to guess. I've passed your question to a member of the team who will get back to you."
+  },
+  {
+   "id": "I06",
+   "text": "Can you recommend a good Italian restaurant?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "idk": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 530.0,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I don't have reliable information on that in our documentation, so I don't want to guess. I've passed your question to a member of the team who will get back to you."
+  },
+  {
+   "id": "I07",
+   "text": "Do you sell cars?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "idk": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 499.9,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I don't have reliable information on that in our documentation, so I don't want to guess. I've passed your question to a member of the team who will get back to you."
+  },
+  {
+   "id": "I08",
+   "text": "Write me a poem about the moon",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "idk": true
+   },
+   "agent": "support",
+   "expected_agent": "support",
+   "latency_ms": 503.3,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I don't have reliable information on that in our documentation, so I don't want to guess. I've passed your question to a member of the team who will get back to you."
+  },
+  {
+   "id": "O01",
+   "text": "Where is my order ORD-1001?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 380.7,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Order ORD-1001 (Cotton Throw Blanket, Scented Candle Cedar x2) has shipped with Royal Mail, tracking RM123456789GB, estimated delivery 2026-11-23."
+  },
+  {
+   "id": "O02",
+   "text": "Can you check ORD-1003 for me?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 388.7,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Order ORD-1003 (Wool Rug 160x230) is being prepared in our warehouse and should be dispatched within 1 working day."
+  },
+  {
+   "id": "O03",
+   "text": "Has ORD-1011 arrived yet? I was told by now.",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 679.9,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Order ORD-1011 (Noise Cancelling Headphones, Smart LED Desk Lamp x2) has shipped with Royal Mail, tracking RM404040404GB, estimated delivery 2026-11-17. It is running later than estimated - I'm sorry about that; if it hasn't arrived within 3 working days of the estimate, reply and we'll open a carrier investigation."
+  },
+  {
+   "id": "O04",
+   "text": "Please track my parcel ORD-1006",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 349.2,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Order ORD-1006 (Picture Frame Trio) has shipped with DPD, tracking DPD112233, estimated delivery 2026-11-22."
+  },
+  {
+   "id": "O05",
+   "text": "I'd like a refund for ORD-1004, the air fryer is faulty",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true,
+    "refund_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 490.5,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I've refunded GBP 89.50 for order ORD-1004 to your original payment method; it should arrive within 5-7 working days."
+  },
+  {
+   "id": "O06",
+   "text": "Please refund ORD-1002",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true,
+    "refund_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 457.6,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I've refunded GBP 39.99 for order ORD-1002 to your original payment method; it should arrive within 5-7 working days."
+  },
+  {
+   "id": "O07",
+   "text": "Refund ORD-1007 please",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true,
+    "status": true,
+    "refund_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 459.7,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I've submitted a GBP 249.00 refund for ORD-1007. Because it's over GBP 100, a manager needs to approve it - you'll hear from us within 1 working day."
+  },
+  {
+   "id": "O08",
+   "text": "I want my money back for ORD-1005",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true,
+    "refund_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 492.2,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I can't refund ORD-1005 right now: outside 30 day return window (45 days since delivery). Our returns window is 30 days from delivery."
+  },
+  {
+   "id": "O09",
+   "text": "Refund ORD-1012 please",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 315.1,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm sorry, I can't refund ORD-1012 right now: already fully refunded."
+  },
+  {
+   "id": "O10",
+   "text": "Refund ORD-1001",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "content": true,
+    "refund_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 450.4,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I couldn't find order ORD-1001 under this email address, so I can't share details. Please double-check the number or contact us from the email you ordered with."
+  },
+  {
+   "id": "O11",
+   "text": "Cancel ORD-1009",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "order_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 338.5,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Done - order ORD-1009 has been cancelled and you won't be charged."
+  },
+  {
+   "id": "O12",
+   "text": "Cancel ORD-1011",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "content": true,
+    "order_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 416.8,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I couldn't cancel ORD-1011: cannot cancel: order is already shipped. If it has shipped you can return it for a refund once it arrives."
+  },
+  {
+   "id": "O13",
+   "text": "Please change the delivery address on ORD-1014 to 10 Downing Street London SW1A 2AA",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 330.9,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Your delivery address on ORD-1014 is now 10 Downing Street London SW1A 2AA."
+  },
+  {
+   "id": "O14",
+   "text": "Can I change the address on ORD-1003?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 400.3,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I can update the address on ORD-1003 while it's still processing. What is the full new delivery address, including postcode?"
+  },
+  {
+   "id": "O15",
+   "text": "Where's my order?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 382.2,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Happy to help. Which order do you mean? Your recent orders: ORD-1001 (shipped, GBP 64.90); ORD-1002 (delivered, GBP 39.99)."
+  },
+  {
+   "id": "O16",
+   "text": "I'd like a refund please",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 399.8,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Happy to help. Which order do you mean? Your recent orders: ORD-1007 (delivered, GBP 249.00); ORD-1008 (cancelled, GBP 35.00)."
+  },
+  {
+   "id": "O17",
+   "text": "Cancel ORD-1008",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 474.0,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I couldn't cancel ORD-1008: cannot cancel: order is already cancelled. If it has shipped you can return it for a refund once it arrives."
+  },
+  {
+   "id": "O18",
+   "text": "What's the status of ORD-9999?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 432.8,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I couldn't find order ORD-9999 under this email address, so I can't share details. Please double-check the number or contact us from the email you ordered with."
+  },
+  {
+   "id": "O19",
+   "text": "Refund ORD-1013, the headphones are damaged",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "status": true,
+    "refund_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 470.8,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I've submitted a GBP 129.00 refund for ORD-1013. Because it's over GBP 100, a manager needs to approve it - you'll hear from us within 1 working day."
+  },
+  {
+   "id": "O20",
+   "text": "I'd like to return my ORD-1015 order for a refund",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "refund_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 467.1,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I've refunded GBP 64.00 for order ORD-1015 to your original payment method; it should arrive within 5-7 working days."
+  },
+  {
+   "id": "O21",
+   "text": "I'm a bit disappointed, when will ORD-1016 arrive?",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 341.5,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "Order ORD-1016 (Scented Candle Cedar) has shipped with Evri, tracking EV16016, estimated delivery 2026-11-24."
+  },
+  {
+   "id": "M01",
+   "text": "Actually please refund it, it is faulty",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "tool": true,
+    "content": true,
+    "refund_db": true
+   },
+   "agent": "orders",
+   "expected_agent": "orders",
+   "latency_ms": 372.0,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I've refunded GBP 89.50 for order ORD-1004 to your original payment method; it should arrive within 5-7 working days."
+  },
+  {
+   "id": "E01",
+   "text": "This is UNACCEPTABLE! My order is late and nobody replies!!!",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 660.2,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. Thank you for your patience."
+  },
+  {
+   "id": "E02",
+   "text": "I am going to contact my solicitor about this",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true,
+    "severity": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 695.6,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. We're treating this as urgent. Thank you for your patience."
+  },
+  {
+   "id": "E03",
+   "text": "I will report you to Trading Standards",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true,
+    "severity": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 723.4,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. We're treating this as urgent. Thank you for your patience."
+  },
+  {
+   "id": "E04",
+   "text": "I want to speak to a manager right now",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 649.0,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. Thank you for your patience."
+  },
+  {
+   "id": "E05",
+   "text": "Your service is absolutely disgusting, the worst I have ever had",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 652.1,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. Thank you for your patience."
+  },
+  {
+   "id": "E06",
+   "text": "The kettle caught fire and my son was hurt",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true,
+    "severity": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 711.2,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. We're treating this as urgent. Thank you for your patience."
+  },
+  {
+   "id": "E07",
+   "text": "I'm doing a chargeback with my bank, this is fraud",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true,
+    "severity": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 692.7,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. We're treating this as urgent. Thank you for your patience."
+  },
+  {
+   "id": "E08",
+   "text": "You are a bunch of useless idiots",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 641.6,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. Thank you for your patience."
+  },
+  {
+   "id": "E09",
+   "text": "I want to make a formal complaint",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 634.4,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. Thank you for your patience."
+  },
+  {
+   "id": "E10",
+   "text": "I'm fed up, I've told you three times and I will never shop here again",
+   "pass": true,
+   "checks": {
+    "route": true,
+    "escalation_row": true,
+    "slack_alert": true
+   },
+   "agent": "escalation",
+   "expected_agent": "escalation",
+   "latency_ms": 650.7,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "reply": "I'm really sorry about this experience, and I completely understand your frustration. I've passed your case, with all the details, to a senior member of our team who will contact you personally - you won't need to repeat yourself. Thank you for your patience."
+  }
+ ]
+}

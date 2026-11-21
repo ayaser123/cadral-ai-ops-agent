@@ -1,0 +1,9 @@
+.env
+data/cadral.db*
+data/reports/
+data/feedback_dataset.jsonl
+__pycache__/
+*.pyc
+.pytest_cache/
+finetune/out/
+Cadral-AI-Engineer-Test-Task.pdf

@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    env_file: .env          # copy .env.example -> .env ; never committed
+    volumes: ["appdata:/app/data"]
+    restart: unless-stopped
+volumes:
+  appdata:

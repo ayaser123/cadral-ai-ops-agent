@@ -1,0 +1,6 @@
+.env
+.git
+data/cadral.db*
+finetune/out
+__pycache__
+tests
