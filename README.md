@@ -50,7 +50,7 @@ flowchart LR
 ## Quick start
 
 ```bash
-git clone <your-repo-url> && cd <repo-folder>
+git clone https://github.com/ayaser123/cadral-ai-ops-agent && cd cadral-ai-ops-agent
 cp .env.example .env             # add GROQ_API_KEY (free at console.groq.com); leave blank for offline engine
 pip install -r requirements.txt
 python scripts/gen_data.py       # (already committed) regenerates the 21-document knowledge base
